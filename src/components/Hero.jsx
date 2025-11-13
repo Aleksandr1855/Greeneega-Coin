@@ -1,5 +1,5 @@
 export default function Hero() {
-  const pumpUrl = import.meta.env.VITE_PUMP_FUN_URL || 'https://pump.fun/coin/DBh9F2wSukCJdZeNkLYe2LMYnCwMyLcnBgeCf4pgpump'
+  const pumpUrl = import.meta.env.VITE_PUMP_FUN_URL || 'https://pump.fun/coin/5aXzbFAaMJ9L41rBWavfc8NTDiYmzPq4v8CMva9pump'
   return (
     <section id="hero" className="section hero" aria-label="Hero">
       <div className="container hero-grid">
