@@ -1,4 +1,5 @@
 export default function Hero() {
+  const pumpUrl = import.meta.env.VITE_PUMP_FUN_URL || 'https://pump.fun/coin/DBh9F2wSukCJdZeNkLYe2LMYnCwMyLcnBgeCf4pgpump'
   return (
     <section id="hero" className="section hero" aria-label="Hero">
       <div className="container hero-grid">
@@ -9,7 +10,14 @@ export default function Hero() {
             Greeneega is a pure green Solana meme coin. Green candles and thing about money, fast cars and bad girls.
           </p>
           <div className="actions">
-            <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Buy on Pump Fun</a>
+            <a
+              className="btn btn-primary"
+              href={pumpUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Buy on Pump Fun
+            </a>
             <a className="btn btn-secondary" href="https://x.com/Greeneega_coin" target="_blank" rel="noreferrer">Twitter (X)</a>
           </div>
         </div>
